@@ -20,6 +20,13 @@ const routes: Routes = [
         loadChildren: () =>
           import('./pages/home/home.module').then((m) => m.HomeModule),
       },
+      {
+        path: 'course-logic',
+        loadChildren: () =>
+          import('./pages/course-logic/course-logic.module').then(
+            (m) => m.CourseLogicModule
+          ),
+      },
     ],
   },
 ];
