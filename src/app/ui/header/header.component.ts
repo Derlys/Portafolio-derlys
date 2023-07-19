@@ -7,7 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  links : Array<any> = [
+    {
+      name: "Inicio",
+      link: "/"
+    },
+    {
+      name: "Cursos",
+      link: "/course-logic"
+    },
+    {
+      name: "Blog",
+      link: "/"
+    }
+  ];
+  showMenu = false;
+  toggleNavbar(){
+    this.showMenu = !this.showMenu;
+  }
+
+
+  constructor() {
+
+  }
 
   ngOnInit(): void {
   }
